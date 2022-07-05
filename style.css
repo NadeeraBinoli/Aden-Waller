@@ -25,6 +25,16 @@ nav {
   padding: 2rem;
 }
 
+h2{
+  text-align: center;
+  line-height: 2;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+li {
+  list-style: none;
+}
+
 /* navigation bar */
 .contactIcon>*{
   padding-left: 1rem;
@@ -32,9 +42,6 @@ nav {
   color: hsl(0, 0%, 100%);
 }
 
-li {
-  list-style: none;
-}
 
 .brandIcon {
   width: 1.5rem;
@@ -105,10 +112,11 @@ li {
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 22rem;
+  width: 25rem;
   text-align: center;
   padding:2rem;
 }
+
 .main-Section > *{
   flex: 1;
 
@@ -124,10 +132,91 @@ header h1 {
   line-height: 2;
   flex-direction: column;
   justify-content: center;
-  font-size: 2.18rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 
 article.main-Sec-article {
   text-align: left;
 }
+
+
+
+
+/* #Home section */
+
+.Home-articles-dev{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+#Home article{
+  background-color: hsl(48, 99%, 65%);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  text-align: center;
+  padding:1rem;
+  margin: 2rem;
+  justify-content: center;
+  border-radius: 1rem;
+}
+#Home article:hover{
+  transform: scale(1.03);
+}
+
+#Home article > *{
+  flex: 1;
+
+}
+
+.A1,.A3,.A4{
+  line-height: 2.5rem;
+}
+
+
+
+/* #Projects section */
+.projects-articles-dev{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#Projects article{
+  background-color: hsl(48, 99%, 65%);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  text-align: left;
+  padding:1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+#Projects article > *{
+  flex: 1;
+
+}
+.projects-articles-dev header{
+  padding-bottom: 1rem;
+}
+
+#Projects article:hover{
+  transform: scale(1.03);
+}
+/* #About section */
+
+
+/* #contact section */
