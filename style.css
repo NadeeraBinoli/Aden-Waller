@@ -1,0 +1,133 @@
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+main,#Projects,#contact {
+  padding: 2rem;
+  background-color: hsl(0, 0%, 13%);
+  color: hsl(0, 0%, 100%);
+}
+
+#Home,#About {
+  padding: 2rem;
+  background-color: hsl(0, 0%, 19%);
+  color: hsl(0, 0%, 100%);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2rem;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+/* navigation bar */
+.contactIcon>*{
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+li {
+  list-style: none;
+}
+
+.brandIcon {
+  width: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.nav-link-ul {
+  display: flex;
+  grid-gap: 2.5rem;
+  justify-content: center;
+  /*not important */
+}
+
+.hamberger-menue {
+  display: none;
+}
+
+/*mobile size - hamberger */
+@media (max-width: 38rem) {
+  .nav-link-ul {
+    position: fixed;
+    z-index: 1;
+    inset: 0 0 0 40%;
+    background-color: hsl(0 0% 40% /0.95);
+    flex-direction: column;
+    padding: 2rem;
+    transform: translateX(100%);
+  }
+
+  .nav-link-ul[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .hamberger-menue {
+    position: absolute;
+    display: block;
+    z-index: 9;
+    background: url("images/bar_24dp.svg");
+    width: 1.5rem;
+    padding: 0;
+    border: 0;
+    aspect-ratio: 1;
+    top: 4rem;
+    right: 10px;
+  }
+
+}
+
+/* click activate and hover */
+.nav-link:hover {
+  color: hsl(59, 100%, 65%);
+  border-bottom: solid;
+  border-bottom-color: hsl(59, 100%, 65%);
+  padding: 2px;
+
+}
+.contactIcon>*:hover {
+  font-size: 1.58rem;
+  color: hsl(59, 100%, 65%);
+}
+
+/* .main-Section */
+.main-Section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  text-align: center;
+  padding:2rem;
+}
+.main-Section > *{
+  flex: 1;
+
+
+}
+img.Aden-Waller-Logo {
+  display: block;
+  justify-content: center;
+  padding: 0;
+}
+
+header h1 {
+  line-height: 2;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.18rem;
+  font-weight: 300;
+}
+
+article.main-Sec-article {
+  text-align: left;
+}
