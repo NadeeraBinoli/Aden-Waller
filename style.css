@@ -292,7 +292,7 @@ article.main-Sec-article {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 #contact article {
